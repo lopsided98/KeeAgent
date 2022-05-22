@@ -19,6 +19,8 @@ namespace KeeAgent.UI
 
     public object Result { get; private set; }
 
+    protected override bool ShowWithoutActivation { get { return true; } }
+
     public void Start(DecryptFunc decrypt)
     {
       if (decrypt == null) {
